@@ -1,5 +1,5 @@
-import  { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import ShoppingCart from './components/ShoppingCart';
 import OrderSummary from './components/OrderSummary';
@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-
+    <Router>
       <Routes>
         <Route path="/" element={<ProductList
           products={productsData}
@@ -53,7 +53,7 @@ function App() {
           onQuantityChange={changeQuantity} />} />
         <Route path="/order-summary" element={<OrderSummary cartItems={cartItems} />} />
       </Routes>
-
+    </Router>
   );
 }
 
