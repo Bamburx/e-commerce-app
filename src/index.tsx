@@ -7,10 +7,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-let basename = ''; // Domyślnie pusta dla lokalnego developmentu
+let basename = ''; 
 if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-  // Ustaw basename tylko wtedy, gdy nie jesteś na localhost
-  basename = '/e-commerce-shop'; // Zmień na nazwę swojego repozytorium
+  basename = '/e-commerce-app'; 
 }
 
 root.render(
