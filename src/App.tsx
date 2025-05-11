@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <Router basename="/e-commerce-app/">
+
       <Routes>
         <Route path="/" element={<ProductList
           products={productsData}
@@ -53,7 +53,7 @@ function App() {
           onQuantityChange={changeQuantity} />} />
         <Route path="/order-summary" element={<OrderSummary cartItems={cartItems} />} />
       </Routes>
-    </Router>
+
   );
 }
 
