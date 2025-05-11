@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/e-commerce-app/">
       <Routes>
         <Route path="/" element={<ProductList
           products={productsData}
