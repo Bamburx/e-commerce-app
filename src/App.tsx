@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { BrowserRouter as  Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import ShoppingCart from './components/ShoppingCart';
 import OrderSummary from './components/OrderSummary';
