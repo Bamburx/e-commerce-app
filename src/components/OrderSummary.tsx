@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import type { CartItem, OrderSummaryProps } from '../types';
+import type {  OrderSummaryProps } from '../types';
 
 const OrderSummary = ({ cartItems }: OrderSummaryProps) => {
   const formatPrice = (price: { main: number; fractional: number }): string => {

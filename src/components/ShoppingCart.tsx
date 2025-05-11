@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import type { CartItem, ShoppingCartPropsWithQuantity } from '../types';
+import type { ShoppingCartPropsWithQuantity } from '../types';
 
 const ShoppingCart = ({ cartItems, onRemoveFromCart, onQuantityChange }: ShoppingCartPropsWithQuantity) => {
     const formatPrice = (price: { main: number; fractional: number }): string => {
